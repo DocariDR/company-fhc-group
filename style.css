@@ -41,3 +41,8 @@ main {
     margin: 0 auto 2rem;
     text-align: center;
 }
+
+.container h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
