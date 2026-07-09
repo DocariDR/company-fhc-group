@@ -17,3 +17,10 @@ body {
     color: #fff;
     background-color: #03045e;
 }
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    gap: .1rem;
+    align-items: center;
+}
