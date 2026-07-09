@@ -66,3 +66,10 @@ section p:first-of-type {
 section p:last-of-type {
     background: linear-gradient(to right, #03045e, #3a86ff);
 }
+
+footer {
+    background-color: #000;
+    text-align: center;
+    color: lightgray;
+    padding: 50px 150px;
+}
