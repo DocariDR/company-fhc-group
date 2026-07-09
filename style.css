@@ -60,7 +60,7 @@ section p {
 }
 
 section p:first-of-type {
-    background: url("images1.jpg") center / cover no-repeat;
+    background: url("images/images1.jpg") center / cover no-repeat;
 }
 
 section p:last-of-type {
