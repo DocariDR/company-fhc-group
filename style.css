@@ -41,18 +41,18 @@ main {
     padding: 100px 0;
 }
 
-.container {
+#main-home .container {
     max-width: 700px;
     margin: 0 auto 2rem;
     text-align: center;
 }
 
-.container h2 {
+#main-home .container h2 {
     margin-bottom: 1rem;
     font-size: 2rem;
 }
 
-section p {
+#main-home section p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,11 +64,11 @@ section p {
     line-height: 1.6;
 }
 
-section p:first-of-type {
+#main-home section p:first-of-type {
     background: url("images/images1.jpg") center / cover no-repeat;
 }
 
-section p:last-of-type {
+#main-home section p:last-of-type {
     background: linear-gradient(to right, #03045e, #3a86ff);
 }
 
