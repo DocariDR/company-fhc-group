@@ -30,6 +30,11 @@ body {
     color: inherit;
     font-size: 1.2rem;
     padding: .8rem 1rem;
+    transition: all .3s;
+}
+
+#menu ul a:hover {
+    background-color: rgba(0, 0, 225, .5);
 }
 
 main {
