@@ -58,3 +58,11 @@ section p {
     color: #fff;
     line-height: 1.6;
 }
+
+section p:first-of-type {
+    background: url("images1.jpg") center / cover no-repeat;
+}
+
+section p:last-of-type {
+    background: linear-gradient(to right, #03045e, #3a86ff);
+}
