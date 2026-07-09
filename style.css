@@ -77,6 +77,38 @@ main {
 #main-home section p:last-of-type {
     background: linear-gradient(to right, #03045e, #3a86ff);
 }
+
+/*   A Propos   */
+#main-about .container {
+    padding: 0 150px;
+    text-align: left;
+}
+
+.container h1 {
+    line-height: 1.8;
+}
+
+#main-about section {
+    padding: 2rem 250px;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#main-about section p {
+    margin-bottom: 1rem;
+}
+
+#main-about section p:first-of-type {
+    text-indent: 2rem;
+}
+
+#main-about section p:first-of-type:first-letter {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2rem;
+}
+/*   End A Propos   */
 /*  END MAIN */
 
 /*  FOOTER */
