@@ -118,6 +118,24 @@ main {
 #members-section h2 {
     margin-bottom: 2rem;
 }
+
+#members-section > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.member-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 250px;
+    height: 300px;
+    border-radius: 1rem;
+    border: 2px solid #fff;
+    background-color: rgba(0, 0, 225, .5);
+    padding: 2rem 1rem;
+}
     /*   End A Propos   */
     /*  END MAIN */
 
