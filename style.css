@@ -85,7 +85,9 @@ main {
 
 /*   A Propos   */
 #main-about .container {
-    padding: 0 150px;
+    max-width: 900px;
+    padding: 0 4rem;
+    margin: auto;
     text-align: left;
 }
 
@@ -128,7 +130,6 @@ main {
 #members-section > div {
     width: 80%;
     margin: auto;
-    border: 1px solid yellow;
 }
 
 #members-section .member-list {
