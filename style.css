@@ -148,6 +148,16 @@ main {
     font-size: 3rem;
     font-weight: 700;
 }
+
+.member-box .member-name {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.member-box .member-firstname {
+    font-size: 1rem;
+    text-align: center;
+}
     /*   End A Propos   */
     /*  END MAIN */
 
