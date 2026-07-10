@@ -158,8 +158,35 @@ main {
     font-size: 1rem;
     text-align: center;
 }
-    /*   End A Propos   */
-    /*  END MAIN */
+/*   End A Propos   */
+
+/*      CONTACT     */
+#main-contact .section {
+    padding: 2rem 250px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+#main-contact .form-container {
+    min-height: 50vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #fff;
+    background-color: #03045e;
+    border-radius: 15px;
+    padding: 1rem 4rem;
+}
+
+#main-contact #form {
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+/*      End CONTACT     */
+/*  END MAIN */
 
 /*  FOOTER */
 

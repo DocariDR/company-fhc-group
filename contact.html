@@ -18,24 +18,21 @@
         </nav>
     </header>
     <main id="main-contact">
-        <div class="container">
-            <h1>Contactez nous</h1>
-        </div>
-        <section class="section-form">
-            <div>
+        <section class="section">
+            <div class="form-container">
+                <h1>Contactez nous</h1>
                 <form id="form" action="post" action="#">
                     <div class="group-form">
                         <label for="lastName">Nom :</label>
-                        <input id="lastName" type="text" name="lastName" placeholder="Entrer votre nom">
+                        <input id="lastName" type="text" name="lastName" placeholder="Entrer votre nom" required>
                     </div>
                     <div class="group-form">
                         <label for="firstName">Prénom :</label>
-                        <input id="firstName" type="text" name="firstName" placeholder="Entrer votre prénom">
+                        <input id="firstName" type="text" name="firstName" placeholder="Entrer votre prénom" required>
                     </div>
                     <button id="btn" type="submit">Envoyer</button>
                 </form>
             </div>
-            <div></div>
         </section>
     </main>
     <footer>
