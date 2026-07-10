@@ -108,6 +108,12 @@ main {
     font-style: italic;
     font-size: 2rem;
 }
+
+#members-section {
+    padding: 4rem 200px;
+    background-color: #03045e;
+    color: #fff;
+}
 /*   End A Propos   */
 /*  END MAIN */
 
