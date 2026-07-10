@@ -190,6 +190,12 @@ main {
     font-size: 1.2rem;
     padding: .2rem .4rem;
 }
+
+#main-contact #form #btn {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: .4rem 1rem;
+}
 /*      End CONTACT     */
 /*  END MAIN */
 
