@@ -114,8 +114,12 @@ main {
     background-color: #03045e;
     color: #fff;
 }
-/*   End A Propos   */
-/*  END MAIN */
+
+#members-section h2 {
+    margin-bottom: 2rem;
+}
+    /*   End A Propos   */
+    /*  END MAIN */
 
 /*  FOOTER */
 
