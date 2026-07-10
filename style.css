@@ -161,14 +161,11 @@ main {
 /*   End A Propos   */
 
 /*      CONTACT     */
-#main-contact .section {
-    padding: 2rem 250px;
-    margin: 0 auto;
-}
-
 #main-contact .form-container {
     min-height: 50vh;
-    width: 80%;
+    min-width: 500px;
+    width: 50%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
