@@ -12,12 +12,17 @@ body {
 /*     HEADER   */
 
 #header-page {
-    padding: 0 150px;
+    color: #fff;
+    background-color: #03045e;
+}
+
+#header-page > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
-    background-color: #03045e;
+    max-width: 1200px;
+    padding: 0 4rem;
+    margin: auto;
 }
 
 #menu ul {
@@ -89,7 +94,8 @@ main {
 }
 
 #main-about .section {
-    padding: 2rem 250px;
+    max-width: 1000px;
+    padding: 2rem;
     margin: 0 auto;
     text-align: justify;
     line-height: 1.6;
@@ -110,9 +116,9 @@ main {
 }
 
 #members-section {
-    padding: 4rem 200px;
-    background-color: #03045e;
+    padding: 4rem;
     color: #fff;
+    background-color: #03045e;
 }
 
 #members-section h2 {
@@ -120,16 +126,23 @@ main {
 }
 
 #members-section > div {
-    display: flex;
-    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    border: 1px solid yellow;
 }
 
-.member-box {
+#members-section .member-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.member-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    width: 250px;
+    min-width: 200px;
+    width: 25%;
     height: 300px;
     border-radius: 1rem;
     border: 2px solid #fff;
@@ -137,7 +150,7 @@ main {
     padding: 2rem 1rem;
 }
 
-.member-box .picture {
+.member-item .picture {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,12 +162,12 @@ main {
     font-weight: 700;
 }
 
-.member-box .member-name {
+.member-item .member-name {
     font-size: 1.5rem;
     text-align: center;
 }
 
-.member-box .member-firstname {
+.member-item .member-firstname {
     font-size: 1rem;
     text-align: center;
 }
