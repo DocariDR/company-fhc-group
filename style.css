@@ -88,7 +88,7 @@ main {
     line-height: 1.8;
 }
 
-#main-about section {
+#main-about .section {
     padding: 2rem 250px;
     margin: 0 auto;
     text-align: justify;
