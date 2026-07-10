@@ -164,7 +164,6 @@ main {
 #main-contact .section {
     padding: 2rem 250px;
     margin: 0 auto;
-    line-height: 1.6;
 }
 
 #main-contact .form-container {
@@ -173,28 +172,40 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 2rem;
     color: #fff;
     background-color: #03045e;
     border-radius: 15px;
-    padding: 1rem 4rem;
+    padding: 2rem 4rem;
 }
 
 #main-contact #form {
     font-size: 1.8rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 #main-contact #form input[type=text] {
     font-size: 1.2rem;
     padding: .2rem .4rem;
+    width: 100%;
 }
 
-#main-contact #form #btn {
+#form #btn {
     font-size: 1.2rem;
     font-weight: bold;
-    padding: .4rem 1rem;
+    padding: .6rem 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 15px;
+    transition: all .5s;
+}
+
+#form #btn:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 225, .5);
 }
 /*      End CONTACT     */
 /*  END MAIN */
