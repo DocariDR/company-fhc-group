@@ -286,4 +286,46 @@ footer {
         transition: all .3s ease;
     }
 
+    #nav-menu {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        position: absolute;
+        top: 46px;
+        right: 0;
+        max-width: 0;
+        height: auto;
+        overflow: hidden;
+        background-color: #03045e;
+        transition: all .5s ease;
+    }
+    
+    #nav-menu li a {
+        padding: .5rem 2rem;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    #nav-menu li a:hover, #nav-menu li a:focus-visible, #nav-menu li a.active {
+        color: #03045e;
+        background-color: #ffb703;
+        border-bottom-color: transparent;
+    }
+
+    #nav-btn-check:checked ~ .nav-menu-icon span:first-child {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    #nav-btn-check:checked ~ .nav-menu-icon span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #nav-btn-check:checked ~ .nav-menu-icon span:last-child {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    #navbar:has(#nav-btn-check:checked) #nav-menu {
+        max-width: 150px;
+    }
+
 }
