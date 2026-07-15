@@ -40,11 +40,13 @@ body {
     display: none;
 }
 
-#menu ul {
+#nav-menu {
     list-style: none;
     display: flex;
-    gap: .1rem;
+    justify-content: center;
+    gap: 1rem;
     align-items: center;
+    height: 3rem;
 }
 
 #menu ul a {
