@@ -11,18 +11,26 @@ body {
 
 /*     HEADER   */
 
-#header-page {
+#main-header {
     color: #fff;
     background-color: #03045e;
+    position: sticky;
+    top: 0;
+    z-index: 20;
 }
 
-#header-page > div {
+#main-header #navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1100px;
     padding: 0 4rem;
-    margin: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+#nav-menu-btn {
+    display: none;
 }
 
 #menu ul {
