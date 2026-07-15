@@ -56,13 +56,17 @@ body {
     color: inherit;
     font-size: 1.2rem;
     font-weight: 600;
+    letter-spacing: .05em;
     border-bottom: 2px solid transparent;
     padding-bottom: .1rem;
     transition: all .3s ease;
 }
 
-#menu ul a:hover {
-    background-color: rgba(0, 0, 225, .5);
+#nav-menu li a:hover, #nav-menu li a:focus-visible, #nav-menu li a.active {
+    color: #ffb703;
+    border-bottom-color: #ffb703;
+    outline: #ffb703;
+    outline-offset: .2rem;
 }
 
 /*  END MAIN    */
