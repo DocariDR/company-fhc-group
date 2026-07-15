@@ -208,6 +208,10 @@ main {
 /*   End A Propos   */
 
 /*      CONTACT     */
+#main-contact {
+    height: 100vh;
+}
+
 #main-contact .form-container {
     min-height: 50vh;
     min-width: 500px;
@@ -402,5 +406,37 @@ footer {
 
     .member-item .member-firstname {
         font-size: .8rem;
+    }
+
+    /*      Contact Page     */
+    #main-contact .form-container {
+        min-width: 200px;
+        width: 90%;
+        gap: 1rem;
+        border-radius: 8px;
+        padding: .8rem 2rem;
+    }
+
+    #main-contact #form {
+        font-size: 1.2rem;
+        gap: 1rem;
+    }
+
+    #main-contact #form input[type=text] {
+        font-size: .8rem;
+        padding: .1rem .2rem;
+    }
+
+    #form #btn {
+        font-size: .8rem;
+        padding: .4rem 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-radius: 30px;
+    }
+
+    #form #btn:hover {
+        color: #fff;
+        background-color: rgba(0, 0, 225, .5);
     }
 }
