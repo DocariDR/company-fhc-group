@@ -27,6 +27,13 @@ body {
     padding: 0 4rem;
     margin: 0 auto;
     position: relative;
+    color: #fff;
+}
+
+#navbar #logo {
+    font-size: 2rem;
+    text-decoration: none;
+    color: inherit;
 }
 
 #nav-menu-btn {
