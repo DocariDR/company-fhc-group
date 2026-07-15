@@ -268,4 +268,22 @@ footer {
         display: block;
         cursor: pointer;
     }
+
+    #nav-menu-btn .nav-menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 26px;
+        height: 17px;
+        cursor: pointer;
+    }
+
+    .nav-menu-icon span {
+        display: block;
+        height: 3px;
+        border-radius: 3px;
+        background-color: #ccc;
+        transition: all .3s ease;
+    }
+
 }
