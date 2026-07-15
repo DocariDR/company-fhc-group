@@ -27,11 +27,12 @@ body {
     padding: 0 4rem;
     margin: 0 auto;
     position: relative;
-    color: #fff;
+    color: #ccc;
 }
 
 #navbar #logo {
     font-size: 2rem;
+    font-weight: 700;
     text-decoration: none;
     color: inherit;
 }
@@ -49,12 +50,15 @@ body {
     height: 3rem;
 }
 
-#menu ul a {
+#nav-menu li a {
+    display: inline-block;
     text-decoration: none;
     color: inherit;
     font-size: 1.2rem;
-    padding: .8rem 1rem;
-    transition: all .3s;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    padding-bottom: .1rem;
+    transition: all .3s ease;
 }
 
 #menu ul a:hover {
