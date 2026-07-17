@@ -26,17 +26,35 @@
         </nav>
     </header>
     <main id="main-contact">
+        <h1>Contactez nous</h1>
         <section class="section">
             <div class="form-container">
-                <h1>Contactez nous</h1>
+                <h2>Envoyez-nous un message</h2>
                 <form id="form" action="post" action="#">
                     <div class="group-form">
                         <label for="lastName">Nom :</label>
-                        <input id="lastName" type="text" name="lastName" placeholder="Entrer votre nom" required>
+                        <input class="field" id="lastName" type="text" name="lastName" placeholder="Entrer votre nom" required>
                     </div>
                     <div class="group-form">
                         <label for="firstName">Prénom :</label>
-                        <input id="firstName" type="text" name="firstName" placeholder="Entrer votre prénom" required>
+                        <input class="field" id="firstName" type="text" name="firstName" placeholder="Entrer votre prénom" required>
+                    </div>
+                    <div class="group-form">
+                        <label for="email">Email :</label>
+                        <input class="field" id="email" type="email" name="email" placeholder="bob@exemple.com" required>
+                    </div>
+                    <div class="group-form">
+                        <label for="subject">Sujet :</label>
+                        <select class="field" name="subject" id="subject">
+                            <option value="qg">Question générale</option>
+                            <option value="cp">Commande professionnelle</option>
+                            <option value="f">Formation</option>
+                            <option value="a">Ateliers</option>
+                        </select>
+                    </div>
+                    <div class="group-form">
+                        <label for="subject">Message :</label>
+                        <textarea class="msg-field" name="msg" id="message"></textarea>
                     </div>
                     <button id="btn" type="submit">Envoyer</button>
                 </form>
