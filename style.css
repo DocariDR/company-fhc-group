@@ -186,6 +186,11 @@ main {
     border: 2px solid #ccc;
     background-color: rgba(0, 0, 225, .5);
     padding: 2rem 1rem;
+    transition: transform .5s ease;
+}
+
+.member-item:hover {
+    transform: scale(1.05);
 }
 
 .member-item .picture {
