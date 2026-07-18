@@ -170,7 +170,7 @@ main {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 2rem 1rem;
 }
 
@@ -276,28 +276,28 @@ main {
 }
 
 .group-form .field-name {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
-#form .group-form .field, .group-form .msg-field {
+.group-form .field, .group-form .msg-field {
     font-size: 1rem;
-    padding: .2rem .4rem;
+    padding: .1rem .4rem;
 }
 
-#form .group-form .msg-field {
+.group-form .msg-field {
     resize: vertical;
     min-height: 6rem;
     line-height: 1.4;
 }
 
 #form #btn {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     padding: .6rem 1rem;
     margin-top: 1.5rem;
     border: none;
     border-radius: 15px;
-    transition: all .5s;
+    transition: all .3s;
 }
 
 #form #btn:hover {
@@ -438,10 +438,6 @@ footer {
         padding: 2rem 1.5rem;
     }
 
-    #members-section h2 {
-        margin-bottom: 1.6rem;
-    }
-
     .member-item {
         row-gap: 1.5rem;
         min-width: 200px;
@@ -465,10 +461,22 @@ footer {
     }
 
     /*      Contact Page     */
+    #main-contact {
+        padding: 2rem 1.5rem;
+    }
+    
+    #main-contact .section {
+        gap: 0;
+    }
+
     #main-contact .form-container {
         gap: 1rem;
         border-radius: 8px;
         padding: 1.5rem 2rem;
+    }
+
+    .group-form .field-name {
+        font-size: 1.1rem;
     }
 
     #form #btn {
@@ -476,10 +484,5 @@ footer {
         padding: .4rem 1rem;
         margin-top: 1.5rem;
         border-radius: 30px;
-    }
-
-    #form #btn:hover {
-        color: #fff;
-        background-color: rgba(0, 0, 225, .5);
     }
 }
