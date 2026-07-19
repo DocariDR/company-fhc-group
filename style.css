@@ -240,6 +240,10 @@ main {
     min-width: 300px;
 }
 
+.form-container #form {
+    margin-top: 1rem;
+}
+
 .section .infos-container {
     flex: 1;
     padding: 2.5rem 2rem;
@@ -321,6 +325,7 @@ footer {
     color: lightgray;
     padding: 1rem 1.5rem;
     margin: 0 auto;
+    font-size: .8em;
 }
 
 /*  END FOOTER*/
@@ -405,35 +410,34 @@ footer {
     }
     /* end Menu Hamburger*/
 
-    /*  Universal Style     */
+    /*  Universal Styles for Mobile   */
     #main-home .container h1, #main-contact h1, #main-about .container h1 {
         font-size: 1.4em;
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
     }
 
     #main-home h2, #main-contact h2, #main-about h2 {
         font-size: 1.3em;
-        margin-bottom: .5rem;
+        margin-bottom: .2rem;
     }
 
     #main-home h3, #main-contact h3, #main-about h3 {
         font-size: 1.1em;
-        margin-bottom: .3rem;
+        margin-bottom: 0;
     }
-    /*  end Universal style   */
+
+    .content-section, .container {
+        padding: 0 1.5rem;
+    }
+    /*  end Universal style for Mobile  */
 
     /*     Home Page    */
-    #main-home section p {
-        padding: 5rem 1.5rem;
-        height: auto;
+    #main-home .container {
+        padding-bottom: 2rem;
     }
 
     /*   A Propos   */
-    #main-about .container {
-        padding: 0 2rem;
-    }
-
-    #main-about .section {
+    #main-about .content-section {
         padding: 2rem 1.5rem;
         line-height: 1.4;
     }
@@ -465,12 +469,8 @@ footer {
     }
 
     /*      Contact Page     */
-    #main-contact {
-        padding: 2rem 1.5rem;
-    }
-    
-    #main-contact .section {
-        gap: 0;
+    #main-contact .container h1 {
+        margin-bottom: 1rem;
     }
 
     #main-contact .form-container {
@@ -488,6 +488,10 @@ footer {
         padding: .4rem 1rem;
         margin-top: 1.5rem;
         border-radius: 30px;
+    }
+
+    #main-contact .infos-list {
+        row-gap: 1rem;
     }
     /*   footer for Mobile   */
     footer {
