@@ -6,6 +6,7 @@
 
 body {
     background-color: #edf2f4;
+    font-family: Inter, sans-serif;
     font-size: 1.2rem;
 }
 
@@ -77,6 +78,10 @@ body {
 /*  END MAIN    */
 
 /*  Universal Style     */
+h1, h2, h3, #logo {
+    font-family: 'Poppins', sans-serif;
+}
+
 #main-home .container h1, #main-contact h1, #main-about .container h1 {
     font-size: 1.5em;
     margin-bottom: 1rem;
