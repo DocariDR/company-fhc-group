@@ -154,11 +154,11 @@ main {
     margin-bottom: 1rem;
 }
 
-#main-about section p:first-of-type {
+.special-paragraph {
     text-indent: 2rem;
 }
 
-#main-about section p:first-of-type:first-letter {
+.special-paragraph:first-letter {
     font-weight: 700;
     font-style: italic;
     font-size: 2rem;
