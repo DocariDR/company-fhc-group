@@ -84,17 +84,14 @@ h1, h2, h3, #logo {
 
 #main-home .container h1, #main-contact h1, #main-about .container h1 {
     font-size: 1.5em;
-    margin-bottom: 1rem;
 }
 
 #main-home h2, #main-contact h2, #main-about h2 {
     font-size: 1.3em;
-    margin-bottom: 2rem;
 }
 
 #main-home h3, #main-contact h3, #main-about h3 {
     font-size: 1.1em;
-    margin-bottom: .5rem;
 }
 
 .content-section, .container {
