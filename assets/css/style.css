@@ -387,64 +387,91 @@ main {
 }
 
 .special-paragraph:first-letter {
-    font-weight: 700;
-    font-style: italic;
-    font-size: 2rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.2rem;
+    color: var(--navy-900);
+}
+
+#main-about .section + .section {
+    margin-top: .5rem;
 }
 
 .section.members {
-    color: #ccc;
-    background-color: #03045e;
+    color: #eef1f7;
+    background-color: var(--navy-900);
+}
+
+.section.members .content-section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.section.members h2 {
+    color: #fff;
+}
+
+.section.members > .content-section > p {
+    color: #c7d0e2;
+    max-width: 560px;
 }
 
 .section.members .member-list {
     max-width: 100%;
-    margin: 2rem auto 0;
+    margin: 2.2rem auto 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .member-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    min-width: 200px;
+    gap: .9rem;
+    min-width: 220px;
     width: 25%;
-    height: 300px;
-    border-radius: 1rem;
-    border: 2px solid #ccc;
-    background-color: rgba(0, 0, 225, .5);
-    padding: 2rem 1rem;
-    transition: transform .5s ease;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(255, 255, 255, .14);
+    background-color: rgba(255, 255, 255, .04);
+    padding: 2.2rem 1.5rem;
+    transition: transform .3s ease, background-color .3s ease;
+    text-align: center;
 }
 
 .member-item:hover {
-    transform: scale(1.05);
+    transform: translateY(-4px);
+    background-color: rgba(255, 255, 255, .07);
 }
 
 .member-item .picture {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 88px;
+    height: 88px;
     border-radius: 50%;
-    background-color: #000;
-    font-size: 3rem;
-    font-weight: 700;
+    background-color: var(--gold-500);
+    color: var(--navy-900);
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .member-item .member-name {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
     text-align: center;
+    color: #fff;
 }
 
-.member-item .member-firstname {
-    font-size: 1rem;
+.member-item .member-role {
+    font-size: .88rem;
     text-align: center;
+    color: var(--gold-500);
+    margin-top: .1rem;
 }
 /*   End A Propos   */
 
