@@ -589,8 +589,24 @@ main {
 }
 
 .group-form .field, .group-form .msg-field {
+    font-family: var(--font-body);
     font-size: 1rem;
-    padding: .1rem .4rem;
+    padding: .6rem .7rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, .06);
+    color: #fff;
+    transition: border-color .2s ease, background-color .2s ease;
+}
+
+.group-form .field::placeholder, .group-form .msg-field::placeholder {
+    color: #93a0b9;
+}
+
+.group-form .field:focus-visible, .group-form .msg-field:focus-visible {
+    outline: none;
+    border-color: var(--gold-500);
+    background-color: rgba(255, 255, 255, .1);
 }
 
 .group-form .msg-field {
@@ -600,18 +616,27 @@ main {
 }
 
 #form #btn {
-    font-size: 1rem;
-    font-weight: bold;
-    padding: .6rem 1rem;
-    margin-top: 1.5rem;
+    font-family: var(--font-body);
+    font-size: .96rem;
+    font-weight: 600;
+    padding: .75rem 1.4rem;
+    margin-top: .6rem;
     border: none;
-    border-radius: 15px;
-    transition: all .3s;
+    border-radius: var(--radius-sm);
+    background-color: var(--gold-500);
+    color: var(--navy-900);
+    cursor: pointer;
+    transition: background-color .2s ease;
+    align-self: flex-start;
 }
 
 #form #btn:hover {
-    color: #fff;
-    background-color: #ffb703;
+    background-color: var(--gold-600);
+}
+
+#form #btn:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
 }
 /*      End CONTACT     */
 /*  END MAIN */
@@ -622,11 +647,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
-    color: lightgray;
-    padding: 1rem 1.5rem;
+    background-color: #081a33;
+    color: #93a0b9;
+    padding: 1.4rem 1.5rem;
     margin: 0 auto;
-    font-size: .8em;
+    font-size: .85em;
 }
 
 /*  END FOOTER*/
@@ -638,7 +663,7 @@ footer {
     }
 
     #navbar #logo {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     #main-header #navbar {
@@ -664,7 +689,7 @@ footer {
         display: block;
         height: 3px;
         border-radius: 3px;
-        background-color: #ccc;
+        background-color: #dbe2ee;
         transition: all .3s ease;
     }
 
@@ -678,14 +703,20 @@ footer {
         max-width: 0;
         height: auto;
         overflow: hidden;
-        background-color: #03045e;
+        background-color: var(--navy-900);
         transition: all .5s ease;
     }
-    
+
     #nav-menu li a {
-        padding: .5rem 2rem;
+        padding: .6rem 2rem;
         width: 100%;
         white-space: nowrap;
+    }
+
+    #nav-menu li a.cta-link {
+        border-radius: 0;
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, .12);
     }
 
     #nav-menu li a:hover, #nav-menu li a:focus-visible, #nav-menu li a.active {
