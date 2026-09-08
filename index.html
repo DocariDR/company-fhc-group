@@ -25,7 +25,7 @@
                 Fidexa Conseil
             </a>
 
-            <label id="nav-menu-btn">
+            <label id="nav-menu-btn" aria-label="Ouvrir le menu de navigation">
                 <input id="nav-btn-check" type="checkbox">
                 <span class="nav-menu-icon">
                     <span></span><span></span><span></span>
@@ -33,25 +33,38 @@
             </label>
 
             <ul id="nav-menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="a-propos.html">A propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="contact.html" class="cta-link">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main id="main-home">
-        <div class="container">
-            <h1>Petit titre</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque fuga reprehenderit, facilis, animi consequuntur et explicabo quia debitis quas eos quod soluta quis beatae natus? Eveniet ratione quo eum voluptatum.</p>
-        </div>
-        <section class="section">
-            <div class="content-section">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit ratione architecto asperiores beatae adipisci eaque est provident aperiam quidem repellat! Illum odit expedita ad atque hic sequi esse reprehenderit aliquid!
-                </p>
+        <section class="hero">
+            <svg class="hero-pattern" viewBox="0 0 500 500" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <polyline points="20,420 110,340 190,380 270,220 350,260 480,90" fill="none" stroke="#c39a4d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="110" cy="340" r="5" fill="#c39a4d"/>
+                <circle cx="270" cy="220" r="5" fill="#c39a4d"/>
+                <circle cx="480" cy="90" r="5" fill="#c39a4d"/>
+                <g stroke="#eef1f7" stroke-width="1" opacity="0.18">
+                    <line x1="0" y1="100" x2="500" y2="100"/>
+                    <line x1="0" y1="200" x2="500" y2="200"/>
+                    <line x1="0" y1="300" x2="500" y2="300"/>
+                    <line x1="0" y1="400" x2="500" y2="400"/>
+                </g>
+            </svg>
+            <div class="container">
+                <span class="eyebrow">Cabinet de conseil en comptabilité &amp; finance</span>
+                <h1>La rigueur comptable au service de la croissance de votre entreprise</h1>
+                <p>Fidexa Conseil accompagne les dirigeants de PME et d'ETI dans la tenue de leurs comptes, le pilotage financier et la conformité fiscale, avec un interlocuteur unique à chaque étape.</p>
+                <div class="hero-actions">
+                    <a href="contact.html" class="btn btn-primary">Demander un rendez-vous</a>
+                    <a href="a-propos.html" class="btn btn-ghost">Découvrir le cabinet</a>
+                </div>
             </div>
         </section>
-        <section class="section">
+
+        <section class="section section-services">
             <div class="content-section">
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit ratione architecto asperiores beatae adipisci eaque est provident aperiam quidem repellat! Illum odit expedita ad atque hic sequi esse reprehenderit aliquid!
