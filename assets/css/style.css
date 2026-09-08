@@ -720,8 +720,8 @@ footer {
     }
 
     #nav-menu li a:hover, #nav-menu li a:focus-visible, #nav-menu li a.active {
-        color: #03045e;
-        background-color: #ffb703;
+        color: var(--navy-900);
+        background-color: var(--gold-500);
         border-bottom-color: transparent;
     }
 
@@ -738,18 +738,18 @@ footer {
     }
 
     #navbar:has(#nav-btn-check:checked) #nav-menu {
-        max-width: 150px;
+        max-width: 220px;
     }
     /* end Menu Hamburger*/
 
     /*  Universal Styles for Mobile   */
     #main-home .container h1, #main-contact h1, #main-about .container h1 {
-        font-size: 1.4em;
+        font-size: 1.7em;
         margin-bottom: .5rem;
     }
 
     #main-home h2, #main-contact h2, #main-about h2 {
-        font-size: 1.3em;
+        font-size: 1.35em;
         margin-bottom: .2rem;
     }
 
@@ -764,39 +764,44 @@ footer {
     /*  end Universal style for Mobile  */
 
     /*     Home Page    */
-    #main-home .container {
-        padding-bottom: 2rem;
+    #main-home .hero .container {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .section-services .content-section,
+    .section-stats .content-section {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
     }
 
     /*   A Propos   */
     #main-about .content-section {
-        padding: 2rem 1.5rem;
-        line-height: 1.4;
+        padding: 1.5rem 1.5rem 2rem;
+        line-height: 1.5;
     }
-    
-    #members-section {
-        padding: 2rem 1.5rem;
+
+    .section.members .content-section {
+        padding: 2.5rem 1.5rem;
     }
 
     .member-item {
-        row-gap: 1.5rem;
+        row-gap: 1rem;
         min-width: 200px;
-        height: 250px;
-        border-radius: .6rem;
-        padding: 1.5rem 1rem;
+        padding: 1.6rem 1rem;
     }
 
     .member-item .picture {
-        width: 90px;
-        height: 90px;
-        font-size: 2rem;
-    }
-
-    .member-item .member-name {
+        width: 72px;
+        height: 72px;
         font-size: 1.2rem;
     }
 
-    .member-item .member-firstname {
+    .member-item .member-name {
+        font-size: 1rem;
+    }
+
+    .member-item .member-role {
         font-size: .8rem;
     }
 
@@ -808,22 +813,17 @@ footer {
     #main-contact .form-container {
         gap: 1rem;
         border-radius: 8px;
-        padding: 1.5rem 2rem;
-    }
-
-    .group-form .field-name {
-        font-size: 1.1rem;
+        padding: 1.6rem 1.5rem;
     }
 
     #form #btn {
-        font-size: .8rem;
-        padding: .4rem 1rem;
-        margin-top: 1.5rem;
-        border-radius: 30px;
+        width: 100%;
+        align-self: stretch;
+        text-align: center;
     }
 
     #main-contact .infos-list {
-        row-gap: 1rem;
+        row-gap: 1.1rem;
     }
     /*   footer for Mobile   */
     footer {
