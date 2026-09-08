@@ -41,7 +41,9 @@
     </header>
     <main id="main-contact">
         <div class="container">
+            <span class="eyebrow">Parlons de votre projet</span>
             <h1>Contactez-nous</h1>
+            <p>Une question sur nos services ou un rendez-vous à planifier ? Écrivez-nous, nous revenons vers vous sous 48h ouvrées.</p>
         </div>
         <section class="section">
             <div class="content-section">
@@ -64,24 +66,34 @@
                             <label class="field-name" for="subject">Sujet :</label>
                             <select class="field" name="subject" id="subject">
                                 <option value="qg">Question générale</option>
-                                <option value="cp">Commande professionnelle</option>
-                                <option value="f">Formation</option>
-                                <option value="a">Ateliers</option>
+                                <option value="devis">Demande de devis</option>
+                                <option value="compta">Comptabilité &amp; tenue des comptes</option>
+                                <option value="gestion">Gestion financière</option>
+                                <option value="fiscal">Fiscalité &amp; conformité</option>
+                                <option value="creation">Création d'entreprise</option>
                             </select>
                         </div>
                         <div class="group-form">
                             <label class="field-name" for="message">Message :</label>
-                            <textarea class="msg-field" name="msg" id="message"></textarea>
+                            <textarea class="msg-field" name="msg" id="message" placeholder="Décrivez brièvement votre besoin"></textarea>
                         </div>
-                        <button id="btn" type="submit">Envoyer</button>
+                        <button id="btn" type="submit">Envoyer le message</button>
                     </form>
                 </div>
                 <div class="infos-container">
                     <h2>Informations</h2>
                     <div class="infos-list">
                         <div class="info-item">
-                            <h3>Adresse</h3>
-                            <p>12 rue des Vinaigriers<br>75010 Paris, France</p>
+                            <span class="icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11Z"/>
+                                    <circle cx="12" cy="10" r="2.5"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <h3>Adresse</h3>
+                                <p>18 avenue des Ternes<br>75017 Paris, France</p>
+                            </div>
                         </div>
                         <div class="info-item">
                             <h3>Téléphone</h3>
