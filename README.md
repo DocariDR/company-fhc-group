@@ -38,9 +38,11 @@ company-website/
 ├── index.html
 ├── a-propos.html
 ├── contact.html
-├── style.css
-└── images/
-    └── images1.jpg
+└── assets/
+    ├── css/
+    │   └── style.css
+    └── img/
+        └── favicon.svg
 ```
 
 ## Installation / Utilisation
@@ -63,19 +65,20 @@ Puis ouvrir `index.html` directement dans un navigateur.
 - [ ] Animations légères au scroll sur la page d'accueil
 
 ### 2. Contenu & design
-- [ ] Remplacement des placeholders "Nos membres" (cercles numérotés) par de vraies images
-- [ ] Remplacement du texte Lorem ipsum par du contenu réel
-- [ ] État `:focus` personnalisé sur les champs du formulaire
-- [ ] Feedback visuel après soumission du formulaire
+- [x] Remplacement du texte Lorem ipsum par du contenu réel (cabinet fictif Fidexa Conseil)
+- [x] État `:focus` personnalisé sur les champs du formulaire
+- [ ] Feedback visuel après soumission du formulaire (nécessite du JS)
+- [ ] Remplacement des initiales "Notre équipe" par de vraies photos
 
 ### 3. Accessibilité
-- [ ] `aria-label` sur le bouton hamburger
+- [x] `aria-label` sur le bouton hamburger
 - [ ] Lien d'évitement ("aller au contenu principal") pour la navigation clavier
 - [ ] Vérification des contrastes texte/fond (WebAIM)
 
 ### 4. SEO / Métadonnées
-- [ ] Meta description et Open Graph sur les 3 pages
-- [ ] Favicon
+- [x] Meta description sur les 3 pages
+- [x] Favicon
+- [ ] Open Graph sur les 3 pages
 
 
 ## Auteur
