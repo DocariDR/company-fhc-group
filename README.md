@@ -1,10 +1,11 @@
 # Company Website
 
+![Version](https://img.shields.io/badge/version-2.0.0-blue?style=flat)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-En%20cours-yellow?style=flat)
 
-Site vitrine multipage réalisé dans le cadre de ma formation pratique en Développement Web chez FHC Groupe Sarl, habillé pour un cabinet fictif de conseil en comptabilité et finance d'entreprise : **Fidexa Conseil**.
+Site vitrine multipage réalisé dans le cadre de ma formation pratique en Développement Web chez FHC Groupe Sarl.
 
 ## Aperçu
 
@@ -12,24 +13,28 @@ Site vitrine multipage réalisé dans le cadre de ma formation pratique en Déve
 
 ## À propos
 
-Ce projet a été réalisé à partir d'un brief donné à l'oral par mon formateur, illustré par des maquettes dessinées au tableau pour chaque page. L'objectif : intégrer un site vitrine multipage (Accueil, À propos, Contact) en HTML5 sémantique et CSS3, en autonomie à partir de ces indications visuelles et verbales.
+Ce projet a été réalisé à partir d'un brief donné à l'oral par mon formateur, illustré par des maquettes dessinées au tableau pour chaque page. L'objectif : intégrer un site vitrine multipage en HTML5 sémantique et CSS3, en autonomie à partir de ces indications visuelles et verbales.
 
-C'est une première version du projet, des améliorations sont prévues, notamment l'ajout de JavaScript (voir section *Améliorations futures*).
+Le contenu met en scène un cabinet de conseil fictif, **Fidexa Conseil**, utilisé comme cas d'usage pour donner un rendu réaliste au projet (pas de Lorem ipsum ni de textes de remplissage).
 
 ## Fonctionnalités
 
-- Site multipage : Accueil, À propos, Contact, avec contenu rédigé pour un cabinet de conseil fictif
+- Site multipage : Accueil, À propos, Contact
+- Page d'accueil avec section hero, présentation des domaines d'intervention et chiffres clés
 - Navigation sticky avec menu hamburger responsive (CSS pur, via `:has()` et une checkbox)
-- Page Accueil avec hero, présentation des domaines d'intervention et chiffres clés
-- Page À propos avec section "Notre équipe" en grille flexible
-- Formulaire de contact complet (nom, prénom, email, sujet, message)
+- Page À propos avec section "Nos membres"
+- Formulaire de contact fonctionnel, connecté à **Web3Forms** :
+  - Envoi réel des messages par e-mail
+  - Protection anti-spam (honeypot)
+  - Redirection vers une page de confirmation (`merci.html`) après envoi
 - Design responsive (media queries pour mobile)
-- Palette et typographie propres (navy + or mat, Fraunces/Inter), icônes SVG inline
+- Typographie personnalisée (Google Fonts : Fraunces pour les titres, Inter pour le texte)
 
 ## Technologies utilisées
 
 - **HTML5** sémantique
-- **CSS3** (Flexbox, transitions, sélecteur `:has()`, media queries)
+- **CSS3** (Flexbox, Grid, transitions, sélecteur `:has()`, media queries)
+- **Web3Forms** (traitement du formulaire de contact, sans backend à héberger)
 
 ## Structure du projet
 
@@ -38,11 +43,12 @@ company-website/
 ├── index.html
 ├── a-propos.html
 ├── contact.html
-└── assets/
-    ├── css/
-    │   └── style.css
-    └── img/
-        └── favicon.svg
+├── merci.html
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   └── img/
+│       └── favicon.svg
 ```
 
 ## Installation / Utilisation
@@ -50,36 +56,34 @@ company-website/
 Aucune dépendance ni serveur nécessaire :
 
 ```bash
-git clone https://github.com/DocariDR/company-website.git
-cd company-website
+git clone https://github.com/DocariDR/company-fhc-group.git
+cd company-fhc-group
 ```
 
 Puis ouvrir `index.html` directement dans un navigateur.
 
-## Améliorations futures
+## Historique des versions
+
+| Version | Contenu |
+|---|---|
+| `v1.0.0` | Version initiale : structure multipage (Accueil, À propos, Contact), contenu de démonstration |
+| `v2.0.0` | Refonte : rebranding "Fidexa Conseil", contenu réel, sections hero et stats, formulaire connecté à Web3Forms (envoi, anti-spam, page de confirmation), réorganisation des fichiers (`assets/`), typographie personnalisée |
+
+## Roadmap
+
+Prochaines améliorations envisagées, dans l'ordre de priorité :
 
 ### 1. JavaScript
-- [ ] État actif du menu : ajout/retrait dynamique de la classe `.active` sur le lien de navigation correspondant à la page courante
+- [ ] État actif du menu géré dynamiquement en JS (actuellement en dur par page via `class="active"`)
 - [ ] Validation du formulaire de contact côté client (messages d'erreur personnalisés)
-- [ ] Menu hamburger en JS (remplace le hack CSS `:has()` + checkbox actuel)
 - [ ] Animations légères au scroll sur la page d'accueil
 
-### 2. Contenu & design
-- [x] Remplacement du texte Lorem ipsum par du contenu réel (cabinet fictif Fidexa Conseil)
-- [x] État `:focus` personnalisé sur les champs du formulaire
-- [ ] Feedback visuel après soumission du formulaire (nécessite du JS)
-- [ ] Remplacement des initiales "Notre équipe" par de vraies photos
-
-### 3. Accessibilité
-- [x] `aria-label` sur le bouton hamburger
+### 2. Accessibilité
 - [ ] Lien d'évitement ("aller au contenu principal") pour la navigation clavier
 - [ ] Vérification des contrastes texte/fond (WebAIM)
 
-### 4. SEO / Métadonnées
-- [x] Meta description sur les 3 pages
-- [x] Favicon
-- [ ] Open Graph sur les 3 pages
-
+### 3. Technique
+- [ ] Minification CSS avant mise en production
 
 ## Auteur
 
