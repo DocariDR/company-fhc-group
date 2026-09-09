@@ -4,7 +4,7 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-En%20cours-yellow?style=flat)
 
-Site vitrine multipage réalisé dans le cadre de ma formation pratique en Développement Web chez FHC Groupe Sarl.
+Site vitrine multipage réalisé dans le cadre de ma formation pratique en Développement Web chez FHC Groupe Sarl, habillé pour un cabinet fictif de conseil en comptabilité et finance d'entreprise : **Fidexa Conseil**.
 
 ## Aperçu
 
@@ -18,11 +18,13 @@ C'est une première version du projet, des améliorations sont prévues, notamme
 
 ## Fonctionnalités
 
-- Site multipage : Accueil, À propos, Contact
+- Site multipage : Accueil, À propos, Contact, avec contenu rédigé pour un cabinet de conseil fictif
 - Navigation sticky avec menu hamburger responsive (CSS pur, via `:has()` et une checkbox)
-- Page À propos avec section "Nos membres" en grille flexible
+- Page Accueil avec hero, présentation des domaines d'intervention et chiffres clés
+- Page À propos avec section "Notre équipe" en grille flexible
 - Formulaire de contact complet (nom, prénom, email, sujet, message)
 - Design responsive (media queries pour mobile)
+- Palette et typographie propres (navy + or mat, Fraunces/Inter), icônes SVG inline
 
 ## Technologies utilisées
 
