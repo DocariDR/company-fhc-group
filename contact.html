@@ -51,7 +51,7 @@
                     <h2>Envoyez-nous un message</h2>
                     <form id="form" action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="6fc9c2f1-6a0d-4087-9f2a-0637280c9c11">
-                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <input type="hidden" name="redirect" value="https://docaridr.github.io/company-website/merci.html">
                         <div class="group-form">
                             <label class="field-name" for="lastName">Nom :</label>
                             <input class="field" id="lastName" type="text" name="lastName" placeholder="Entrer votre nom" required>
@@ -79,6 +79,7 @@
                             <label class="field-name" for="message">Message :</label>
                             <textarea class="msg-field" name="msg" id="message" placeholder="Décrivez brièvement votre besoin"></textarea>
                         </div>
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                         <button id="btn" type="submit">Envoyer le message</button>
                     </form>
                 </div>
