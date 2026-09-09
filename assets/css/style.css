@@ -316,6 +316,7 @@ main {
     height: 2.6rem;
     color: var(--gold-600);
     margin-bottom: 1rem;
+    display: inline-block;
 }
 
 .service-card .icon svg {
